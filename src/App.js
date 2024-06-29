@@ -22,7 +22,7 @@ import Contact from './component/Contact';
 const App = () => {
   const accessToken = localStorage.getItem("accessToken")
   return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         {/* 웹 서비스 소개 페이지 */}
         <Route path="/" element={<Login />} />
