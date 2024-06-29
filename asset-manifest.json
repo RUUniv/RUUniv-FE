@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/RUUniv-FE/static/css/main.4873b0d1.css",
-    "main.js": "/RUUniv-FE/static/js/main.54192683.js",
+    "main.js": "/RUUniv-FE/static/js/main.bc4a6ba7.js",
     "static/js/453.32f0811e.chunk.js": "/RUUniv-FE/static/js/453.32f0811e.chunk.js",
     "index.html": "/RUUniv-FE/index.html",
     "main.4873b0d1.css.map": "/RUUniv-FE/static/css/main.4873b0d1.css.map",
-    "main.54192683.js.map": "/RUUniv-FE/static/js/main.54192683.js.map",
+    "main.bc4a6ba7.js.map": "/RUUniv-FE/static/js/main.bc4a6ba7.js.map",
     "453.32f0811e.chunk.js.map": "/RUUniv-FE/static/js/453.32f0811e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4873b0d1.css",
-    "static/js/main.54192683.js"
+    "static/js/main.bc4a6ba7.js"
   ]
 }
