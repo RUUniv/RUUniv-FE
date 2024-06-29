@@ -3,7 +3,7 @@
 import React from 'react';
 import './App.css';
 import Login from './component/Login';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import MyInfo from './component/MyInfo';
 import SignUp from './component/SignUp';
 import PrivateRoute from './component/PrivateRoute';
@@ -21,8 +21,9 @@ import Contact from './component/Contact';
 
 const App = () => {
   const accessToken = localStorage.getItem("accessToken")
+  console.log(process.env.PUBLIC_URL);
   return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         {/* 웹 서비스 소개 페이지 */}
         <Route path="/" element={<Login />} />
@@ -41,7 +42,7 @@ const App = () => {
         <Route path='/example/error' element={<ErrorExample />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-    </BrowserRouter> 
+    </BrowserRouter>
 
   );
 };
