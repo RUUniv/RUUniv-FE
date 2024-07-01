@@ -21,7 +21,6 @@ import Contact from './component/Contact';
 
 const App = () => {
   const accessToken = localStorage.getItem("accessToken")
-  console.log(process.env.PUBLIC_URL);
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>

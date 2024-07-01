@@ -41,7 +41,6 @@ export default function Login() {
     };
       
   async function onClickConfirmButton() { 
-    
     const info = {
       email: email,
       password : pw
@@ -50,8 +49,8 @@ export default function Login() {
       const response = await NestAxios.post("/auth/signIn", info)
       const data = response.data;
       
-      localStorage.setItem('accessToken', data.accessToken)
-      localStorage.setItem('refreshToken', data.refreshToken)
+      await localStorage.setItem('accessToken', data.accessToken)
+      await localStorage.setItem('refreshToken', data.refreshToken)
       
       navigate("/myInfo")
     } catch (error) {

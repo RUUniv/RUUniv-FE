@@ -7,7 +7,7 @@ import axios from 'axios';
 
 
 const NestAxios = await axios.create({
-	baseURL : 'http://localhost:3000/v1'
+	baseURL : `${process.env.REACT_APP_DOMAIN}/v1`
 })
 
 export default NestAxios

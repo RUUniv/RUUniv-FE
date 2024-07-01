@@ -44,8 +44,8 @@ export default function SignUp() {
     try {
       const response = await NestAxios.post("/auth/signUp", info)
       
-      localStorage.setItem("accessToken", response.data.accessToken)
-      localStorage.setItem("refreshToken",response.data.refreshToken)
+      await localStorage.setItem("accessToken", response.data.accessToken)
+      await localStorage.setItem("refreshToken",response.data.refreshToken)
 
       navigate("/myInfo")
     } catch (error) {
