@@ -20,14 +20,13 @@ import Contact from './component/Contact';
 
 
 const App = () => {
-  const accessToken = localStorage.getItem("accessToken")
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         {/* 웹 서비스 소개 페이지 */}
         <Route path="/" element={<Login />} />
         {/* <SignIn /> */}
-        <Route path="/myInfo" element={<PrivateRoute component={<MyInfo />} authenticated={accessToken} />}></Route>
+        <Route path="/myInfo" element={<MyInfo/>}></Route>
         {/* <Route path="/myInfo" element={<MyInfo />} /> */}
         {/* <LogIn /> */}
         <Route path="/signUp" element={<SignUp />} />

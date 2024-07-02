@@ -24,7 +24,8 @@ export default function SendMailExample() {
             <hr/>
             &#123; <br/>
               &nbsp;&nbsp;"email": "인증 받을 이메일", <br/>
-              &nbsp;&nbsp;"universityName": "해당 이메일에 대한 대학" <br/>
+              &nbsp;&nbsp;"universityName": "해당 이메일에 대한 대학", <br />
+              &nbsp;&nbsp;"mailTitle" : "본인 서비스 이름 (메일 제목으로 들어감)(Option)" <br/>
             &#125;
             
         </div>
