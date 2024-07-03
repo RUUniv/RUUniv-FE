@@ -17,7 +17,7 @@ export default function GetVerifiedStudentsExample() {
           
           curl --request GET '
           <br/>
-          --url 'http://localhost:3000/v1/verification/student' 
+          --url 'https://ruuniv-server.xyz/v1/verification/student' 
           <br/>
           --header 'ApiKey: 발급 받은 ApiKey'
 

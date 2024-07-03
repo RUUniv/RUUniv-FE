@@ -15,7 +15,7 @@ export default function SendMailExample() {
           <hr/>
           curl --request POST 
           <br/>
-          --url 'http://localhost:3000/v1/verification/email' 
+          --url 'https://ruuniv-server.xyz/v1/verification/email' 
           <br/>
           --header 'ApiKey: 발급 받은 ApiKey'
 

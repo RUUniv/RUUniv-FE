@@ -36,11 +36,14 @@ export default function MyInfo() {
         });
       await getApiKeys()
     } catch (error) {
-      console.error("Failed to Delete API key:", error.code);
-      alert("로그인을 해주세요")
-      localStorage.removeItem("accessToken")
-      localStorage.removeItem("refreshToken")
-      navigate('/')
+      if (error.response.status == '401') {
+        console.error("Failed to Delete API key:", error.code);
+        localStorage.removeItem("accessToken")
+        localStorage.removeItem("refreshToken")
+        alert("로그인을 해주세요")
+        navigate('/')
+      }
+      alert("API키의 최대 개수는 3개입니다.")
     }
   }
 
@@ -61,7 +64,12 @@ export default function MyInfo() {
     }
     
   }
-    
+  
+  const logout = (() => {
+    localStorage.removeItem("accessToken")
+    localStorage.removeItem("refreshToken")
+    navigate('/')
+  });
     return (
       <div className="page">
         <div className="titleWrap">
@@ -91,6 +99,9 @@ export default function MyInfo() {
           </button>
           <button onClick={() => {navigate('/example')}} className="bottomButton">
             예제
+          </button>
+          <button onClick={logout} className="bottomButton">
+            로그아웃
           </button>
         </div>
       </div>

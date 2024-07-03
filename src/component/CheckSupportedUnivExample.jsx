@@ -16,7 +16,7 @@ export default function CheckSupportedUnivExample() {
           <hr/>
           curl --request GET
           <br/>
-          --url 'http://localhost:3000/v1/verification/&#123;univName&#125;' 
+          --url 'https://ruuniv-server.xyz/v1/verification/&#123;univName&#125;' 
           <br/>
           --header 'ApiKey: 발급 받은 ApiKey'
         

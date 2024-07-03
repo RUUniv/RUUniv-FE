@@ -16,7 +16,7 @@ export default function DeleteStudentsExample() {
           <hr/>
           curl --request DELETE
           <br/>
-          --url 'http://localhost:3000/v1/verification/email/verify' 
+          --url 'https://ruuniv-server.xyz/v1/verification/email/verify' 
           <br/>
           --header 'ApiKey: 발급 받은 ApiKey'
 
