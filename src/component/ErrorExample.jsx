@@ -8,7 +8,7 @@ export default function ErrorExample() {
     return (
       <div className="page">
         <div className="titleWrap">
-          에러 예제
+          공통 에러 예제
         </div>
         
         <div className="bodyWrap">
@@ -30,9 +30,17 @@ export default function ErrorExample() {
               &nbsp;&nbsp;"statusCode": 404 <br/>
             &#125;
           </div>
+          <div className="contentWrap">
+            <p>Error : 너무 많은 요청 (60초 최대 100번) </p>
+            <hr/>
+            &#123; <br/>
+              &nbsp;&nbsp;"message": "ThrottlerException: Too Many Requests",<br/>
+              &nbsp;&nbsp;"statusCode": 429 <br/>
+            &#125;
+          </div>
           <br/>
         </div>
-      
+        
         
           <button onClick={()=>{navigate(-1)}} className="bottomButton">
             뒤로가기
