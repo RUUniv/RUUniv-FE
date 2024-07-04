@@ -62,9 +62,8 @@ export default function VerifyExample() {
             <p>Error : 이미 인증된 이메일</p>
             <hr/>
             &#123; <br/>
-              &nbsp;&nbsp;"message": "UNIVERSITY_NOT_FOUND",<br/>
-              &nbsp;&nbsp;"error": "Not Found", <br/>
-              &nbsp;&nbsp;"statusCode": 404 <br/>
+              &nbsp;&nbsp;"message": "DUPLICATE_VERIFICATION",<br/>
+              &nbsp;&nbsp;"statusCode": 400 <br/>
             &#125;
         </div>
         <br/>
