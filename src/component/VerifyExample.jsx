@@ -63,7 +63,7 @@ export default function VerifyExample() {
             <hr/>
             &#123; <br/>
               &nbsp;&nbsp;"message": "DUPLICATE_VERIFICATION",<br/>
-              &nbsp;&nbsp;"statusCode": 400 <br/>
+              &nbsp;&nbsp;"statusCode": 409 <br/>
             &#125;
         </div>
         <br/>
