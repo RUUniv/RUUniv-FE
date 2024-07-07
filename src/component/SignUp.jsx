@@ -96,11 +96,14 @@ export default function SignUp() {
           </div>
         
         </div>
-      
         
+          <button onClick={()=>{navigate(-1)}} className="bottomButton">
+            뒤로가기
+          </button>
           <button onClick={onClickSignUp} disabled={notAllow} className="bottomButton">
             확인
           </button>
+          
         </div>
       
     );

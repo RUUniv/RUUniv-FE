@@ -70,6 +70,15 @@ export default function MyInfo() {
     localStorage.removeItem("refreshToken")
     navigate('/')
   });
+
+  const goManager = ((apiKey ,id) => {
+    navigate('/manager', {
+      state: {
+        apiKey: apiKey,
+        id : id
+    }})
+  })
+
     return (
       <div className="page">
         <div className="titleWrap">
@@ -80,8 +89,10 @@ export default function MyInfo() {
           <div className='asd'>
             {apiKeys.map(key=> (
                         <div key={key.id}>
-                <div>API Key: {key.apiKey} <button onClick={() => { onClickDeleteApiKey(key.id) }}>삭제</button>
-                <button onClick={() => { navigator.clipboard.writeText(key.apiKey);}}>복사</button>
+                <div>API Key: {key.apiKey}
+                  <button onClick={() => { onClickDeleteApiKey(key.id) }}>삭제</button>
+                  <button onClick={() => { navigator.clipboard.writeText(key.apiKey); }}>복사</button>
+                  <button onClick={() => { goManager(key.apiKey,key.id)}}>관리</button>
                 </div> 
                 
                         </div> 

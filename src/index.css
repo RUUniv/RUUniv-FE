@@ -27,6 +27,15 @@
   flex: 1;
 }
 
+.modal{
+    position: fixed;
+    margin-top: 26px;
+    flex: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .bodyWrap {
   margin-top: 26px;
   flex: 1;
