@@ -50,7 +50,7 @@ export default function ApiKeyManager() {
           <div className='asd'>
             {students.map(key=> (
                         <div key={key.id}>
-                <div>학생: {key.email}
+                <div>학생: {key.email} / 학교 : { key.universityName} 
                   <button onClick={() => { onClickDeleteStudent(key.id) }}>삭제</button>
                 </div> 
                 
