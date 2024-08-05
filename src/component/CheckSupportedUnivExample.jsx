@@ -8,7 +8,7 @@ export default function CheckSupportedUnivExample() {
     return (
       <div className="page">
         <div className="titleWrap">
-          지원 대학 확인 예제
+          특정 지원 대학 확인 예제
         </div>
         
         <div className="bodyWrap">
@@ -16,7 +16,7 @@ export default function CheckSupportedUnivExample() {
           <hr/>
           curl --request GET
           <br/>
-          --url 'https://ruuniv-server.xyz/v1/verification/&#123;univName&#125;' 
+          --url 'https://ruuniv-server.xyz/v1/verification/univ/&#123;univName&#125;' 
           <br/>
           --header 'ApiKey: 발급 받은 ApiKey'
         
@@ -30,23 +30,16 @@ export default function CheckSupportedUnivExample() {
         <div className="contentWrap">
             <p>Response Body</p>
             <hr/>
-            &#123; <br/>
-              &nbsp;&nbsp;"universityName": "서울시립대학교",<br />
-              &nbsp;&nbsp;"isSupported": true<br />
+            &#123; <br />
+            &nbsp;&nbsp;"message": "응답 메시지", <br />
+            &nbsp;&nbsp;"data": &#123; <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;"universityName": "서울시립대학교",<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;"isSupported": true<br />
+                    &nbsp;&nbsp;&#125;<br/>
+            &nbsp;&nbsp;"isSuccess": true <br/>
             &#125;
-            
         </div>
-
-        <div className="contentWrap">
-            <p>Error : 지원하지 않는 대학</p>
-            <hr/>
-            &#123; <br/>
-              &nbsp;&nbsp;"message": "NOT_SUPPORTED_UNIVERSITY",<br/>
-              &nbsp;&nbsp;"statusCode": 400 <br/>
-            &#125;
-            <br/>
-        </div>
-          
+  
         </div>
       
         

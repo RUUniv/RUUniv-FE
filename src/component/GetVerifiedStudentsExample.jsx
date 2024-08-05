@@ -31,16 +31,22 @@ export default function GetVerifiedStudentsExample() {
           
         <div className="contentWrap">
             <p>Response Body</p>
-            <hr/>
-            &#91; <br />
-                  &nbsp;&nbsp;&#123; <br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;"id": "학생 id", <br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;"email": "인증된 이메일", <br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;"universityName": "이메일에 대한 대학명" <br />
-                  &nbsp;&nbsp;&#125; <br />
-                  &nbsp;&nbsp;... <br />
-                  &nbsp;&nbsp;... <br/>
-            &#93;
+            <hr />
+            &#123; <br />
+            &nbsp;&nbsp;"message": "응답 메시지", <br />
+            &nbsp;&nbsp;"data": <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#91; <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#123; <br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": "학생 id", <br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"email": "인증된 이메일", <br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"universityName": "이메일에 대한 대학명" <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;, <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;... <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#93;<br/>
+            &nbsp;&nbsp;"isSuccess": true <br/>
+            &#125;
+            
         </div>
         <br/>
         </div>

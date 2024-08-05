@@ -18,6 +18,7 @@ import ErrorExample from './component/ErrorExample';
 import Contact from './component/Contact';
 import ApiKeyManager from './component/ApiKeyManager';
 import ApiKeyManagerStudentRegistry from './component/ApiKeyStrudnetRegistry';
+import DeleteStudentExample from './component/DeleteStudentExample';
 
 
 
@@ -35,7 +36,8 @@ const App = () => {
         <Route path="/example" element={<Example />} />
         <Route path='/example/sendMail' element={<SendMailExample />} />
         <Route path='/example/verify' element={<VerifyExample />} />
-        <Route path='/example/delete' element={<DeleteStudentsExample />} />
+        <Route path='/example/student/delete' element={<DeleteStudentsExample />} />
+        <Route path='/example/student/delete/email' element={<DeleteStudentExample />} />
         <Route path='/example/getAllSupportedUniv' element={<GetAllSupportedUnivExample />} />
         <Route path='/example/checkSupportedUniv' element={<CheckSupportedUnivExample />}/>
         <Route path='/example/getVerifiedStudents' element={<GetVerifiedStudentsExample />} />

@@ -32,23 +32,19 @@ export default function SendMailExample() {
           
         <div className="contentWrap">
             <p>Response Body</p>
-            <hr/>
-            &#123; <br/>
-              &nbsp;&nbsp;"email": "인증 메일을 받은 이메일", <br/>
-              &nbsp;&nbsp;"universityName": "해당 이메일에 대한 대학", <br/>
-              &nbsp;&nbsp;"isSend": true <br/>
+            <hr />
+            
+            &#123; <br />
+            &nbsp;&nbsp;"message": "응답 메시지", <br />
+            &nbsp;&nbsp;"data": &#123; <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;"email": "인증 메일을 받은 이메일", <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;"universityName": "해당 이메일에 대한 대학", <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;"isSend": true <br/>
+                    &nbsp;&nbsp;&#125;<br/>
+            &nbsp;&nbsp;"isSuccess": true <br/>
             &#125;
           </div>
           
-          <div className="contentWrap">
-            <p>Error : 지원하지 않는 대학 </p>
-            <hr/>
-            &#123; <br/>
-              &nbsp;&nbsp;"message": "UNIVERSITY_NOT_FOUND",<br/>
-              &nbsp;&nbsp;"error": "Not Found", <br/>
-              &nbsp;&nbsp;"statusCode": 404 <br/>
-            &#125;
-        </div>
         <br/>
         </div>
       

@@ -20,11 +20,11 @@ export default function Example() {
             인증 메일 검증
           </button>
           <div className="contentWrap">
-          <button className="bottomCard" onClick={()=>{navigate('/example/delete')}}>
-            인증된 학생 삭제
-          </button>
-          <button className="bottomCard" onClick={()=>{navigate('/example/getAllSupportedUniv')}}>
-            지원 대학 목록 조회
+          <button className="bottomCard" onClick={()=>{navigate('/example/student/delete')}}>
+            인증된 모든 학생 삭제
+            </button>
+            <button className="bottomCard" onClick={()=>{navigate('/example/student/delete/email')}}>
+            인증된 특정 학생 삭제
             </button>
           </div>
           
@@ -37,6 +37,9 @@ export default function Example() {
             </button>
           </div>
           <div className="contentWrap">
+            <button className="bottomCard" onClick={()=>{navigate('/example/getAllSupportedUniv')}}>
+            지원 대학 목록 조회
+            </button>
             <button className="bottomCard"onClick={()=>{navigate('/example/error')}}>
             공통 에러
             </button>
