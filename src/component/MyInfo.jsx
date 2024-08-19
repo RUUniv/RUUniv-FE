@@ -17,7 +17,7 @@ export default function MyInfo() {
       console.error("Failed to Delete API key:", error.code);
       localStorage.removeItem("accessToken")
       localStorage.removeItem("refreshToken")
-      alert("로그인을 해주세요")
+      alert("로그인을 해주세요1")
       navigate('/')
     }
   }
